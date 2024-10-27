@@ -1,0 +1,25 @@
+[{
+  "id": "0001",
+  "nome": "Aroldo",
+  "senha": "123",
+  "nivelPermissao": 3,
+  "cargo": "Administrador"
+},
+
+{
+  "id": "0002",
+  "nome": "Fulano",
+  "senha": "123",
+  "nivelPermissao": 2,
+  "cargo": "Gerente"
+},
+
+{
+  "id": "0003",
+  "nome": "Ciclano",
+  "senha": "123",
+  "nivelPermissao": 1,
+  "cargo": "Funcionário"
+}
+]
+

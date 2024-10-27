@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne Industries</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div style="display: flex; gap: 20px; align-items: flex-end;">
+        <img src="../img/LogoWayne1.png" alt="">
+        <h1>Wayne Industries</h1>
+      </div>
+      <div class="header-buttons">
+        <button id="eventsButton" class="btn btn-primary" aria-label="Ver eventos">Eventos</button>
+        <button id="logoutButton" class="btn btn-danger" aria-label="Fazer logout">Logout</button>
+      </div>
+    </header>
+    <img src="../img/industrias wayne.jpg" alt="" style="width: 100%;">
+    <main class="container main-content">
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-feather="alert-circle"></i> Alertas Ativos</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-value">3</p>
+            <p class="card-description">2 críticos, 1 moderado</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-feather="shield"></i> Status Segurança</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-value status-stable">Estável</p>
+            <p class="card-description">Última verificação: 5min atrás</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i data-feather="calendar"></i> Próximo Evento</h3>
+          </div>
+          <div class="card-content">
+            <p class="card-value">Inauguração Nova Ala</p>
+            <p class="card-description">2024-04-15</p>
+          </div>
+        </div>
+      </div>
+      <div class="charts-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3>Incidentes de Segurança</h3>
+          </div>
+          <div class="card-content">
+            <canvas id="securityChart"></canvas>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Atividades Executadas</h3>
+          </div>
+          <div class="card-content">
+            <canvas id="activitiesChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="eventsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Eventos Wayne Industries</h2>
+          <button class="close-modal" aria-label="Fechar modal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <img src="../img/Banner-confraternização.png" alt="Banner confraternização de fim de ano">
+                <div class="slide-info">
+                  <h3>Confraternização dos funcionários</h3>
+                  <p>2024-12-15</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="../img/banner-produtividade.png" alt="Banner Atenção aos prazos">
+                <div class="slide-info">
+                  <h3>Organização no ambiente de trabalho</h3>
+                  <p>2024-11-01</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="../img/banner-segurança.jpg" alt="Banner da Segurança no trabalho">
+                <div class="slide-info">
+                  <h3>Semana de Segurança do Trabalho</h3>
+                  <p>2024-11-15</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-button prev" aria-label="Slide anterior">
+              <i data-feather="chevron-left"></i>
+            </button>
+            <button class="carousel-button next" aria-label="Próximo slide">
+              <i data-feather="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

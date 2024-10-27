@@ -1,0 +1,19 @@
+[{
+  "name": "Carro Sedan",
+  "funcao": "Transporte de pessoas",
+  "quantidade": "4",
+  "disponibilidade": "True"
+},
+{
+  "name": "Caminhão Baú",
+  "funcao": "Transporte de cargas",
+  "quantidade": "3",
+  "disponibilidade": "True"
+},
+{
+  "name": "Moto de entrega",
+  "funcao": "Transporte de carga",
+  "quantidade": "7",
+  "disponibilidade": "True"
+}
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <img src="img/LogoWayne.png" alt="">
+    <main>
+      <div class="container">
+        <form>
+          <label for="usuario">Usuário:</label>
+          <input type="text" name="usuario" id="usuario">
+
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" id="usuarioSenha">
+        </form>
+        <section>
+          <button class="login" onclick="logar()">Login</button>
+          <button class="nova-senha" onclick="mudarSenha()">Pedir nova senha</button>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal" style="display: none;">
+      <div class="container-modal">
+          <section id="admin" style="display: none;">
+            <img src="img/logo.png" alt="">
+          </section>
+      </div>
+      <div class="container-modal">
+          <section id="funcionario" style="display: none;">
+          W
+        </section>
+      </div>
+    </div>
+
+    <script src="Javascript/index.js"></script>
+  </body>
+</html>
